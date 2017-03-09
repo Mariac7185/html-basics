@@ -2,38 +2,368 @@
 <html>
 
 <head>
+
     <meta charset="UTF-8">
-    <title>HTML Basics</title>
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+        $(function() {
+            $('#Banner').click(function() {
+
+                $("body").css("background-color");
+                $("legend").css("background-color");
+                $("#home").slideUp("slow"); // this will make the fieldset to go up when you press"make banner"
+
+            });
+        });
+        $(function() {
+                    $('span').hover(
+                        function() {
+                            $(this).css("font-size", "58px");
+
+                        },
+                        function() {
+                            $(this).css("font-size", "22px");
+                        }
+
+                    );
+    </script>
+    <style>
+        html,
+        body {
+            /*the style for the div box */
+            text-align: center;
+            font-family: 'Lobster Two', cursive;
+            font-size: 22px;
+            background-color: #57BED8;
+            color: 'div';
+            padding: 5px;
+        }
+        
+        p {
+            font-size: 28px;
+            color: #125cb0;
+            letter-spacing: 2px;
+        }
+        
+        ul {
+            text-align: center;
+        }
+        
+        .move {
+            letter-spacing: 2px;
+            font-size: 32px;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: mymove 3s infinite;
+        }
+        
+        @keyframes mymove {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 150px;
+            }
+        }
+        
+        h1 {
+            font-family: 'Oswald', cursive;
+            font-size: 28px;
+            color: #2d83c3;
+            letter-spacing: 2px;
+        }
+        
+        h2 {
+            font-family: 'Oswald', cursive;
+            font-size: 38px;
+            color: #2d83c3;
+            letter-spacing: 2px;
+        }
+        
+        h3 {
+            font-family: 'Oswald', cursive;
+            font-size: 30px;
+            color: #2d83c3;
+            letter-spacing: 3px;
+        }
+        
+        h4 {
+            font-size: 22px;
+            color: #2d83c3;
+            font-family: 'Oswald', cursive;
+        }
+        
+        h5 {
+            font-size: 18px;
+            color: #2d83c3;
+            font-family: 'Oswald', cursive;
+        }
+        
+        h7 {
+            font-size: 44px;
+            color: #FEFEFE;
+            font-family: 'Oswald', cursive;
+        }
+        
+        h9 {
+            font-size: 44px;
+            color: #2d83c3;
+            font-family: 'Oswald', cursive;
+        }
+        
+        h8 {
+            font-size: 32px;
+            color:#FEFEFE;
+            font-family: 'Oswald', cursive;
+        }
+    </style>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
-    <div class="wrapper">
-        <h1> HTML BASICS</h1>
-        <hr>
-        <h2> The "frontend" of a webpage consists of: </h2>
-        <ul>
-            <li>HTML = HyperText Markup Language </li>
-        <ul>
-            <li>content </li>
-            <ul>
-                <li>CSS = Cascading Style Sheet </li>
-            <li>style</li>
-            <ul>
-                <li>JS = Javascript</li></ul>
-            <ul> 
-            <li>interactivity</li></ul>
-            
-            </ul>
-        </ul>
-        </ul> 
-        
-        <h2> Vocabulary</h2>
-        <hr>
-        <ul> <li> elements have the following syntax: &lt;tag attribute="value"&gt;content&lt;/tag&gt;</li></ul>
-    </div>
+    <!--start of nav-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">College </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" class="nav nav-tabs">
+                    <li class="tabs--">
+                        <a data-toggle="tab" href="#Home"> <span class="glyphicon glyphicon-home"></span> Home</a>
+                    </li>
+                    <li class="tabs--">
+                        <!--This is where the dropdown begins-->
+                        <a data-toggle="tab" href="#Students"> <span class="glyphicon glyphicon-education"></span> S M T Majors</a>
+                        <!--<span class="caret"></span>-->
+
+                    </li>
+
+
+                    <li>
+                        <a data-toggle="tab" href="#Topics"> <span class="glyphicon glyphicon-book"></span>High School Requirements</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of Nav bar-->
+
+    <div class="container">
+        <div class="container-fluid">
+
+            <div class="tab-content">
+                <div id="Home" class="tab-pane fade in active">
+                    <h7>
+                        Prep for College
+                    </h7>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="default.asp">
+                    <img src="SUNY.jpg" alt="Suny" style="width:auto;">
+                    </a>
+                    <br>
+                    <br>
+                <a href="default.asp">
+                    <img src="cuny.jpg" alt="https://www.suny.edu/" style="width:auto;">
+</a>
+                    <br>
+                    <br>
+                    <br>
+                    <h8> Throughout this app you will find out more about the majors in the Science, Math and Technology categories. </h8>
+
+                    <p class="descrip" id="fun">
+                    </p>
+
+
+
+
+                </div>
+
+                <!--begining of Students section-->
+                <div id="Students" class="tab-pane fade">
+                    <p class="descrip">
+                        <h2 style="color:#125cb0" id="T-info"><u>Middle school section</u></h2>
+
+                        <ul class="descrip" id="All-info">
+                            <h3><u>Tips and Rules before posting a picture or a comment <span class="glyphicon glyphicon-thumbs-up"></span></u>
+                            </h3>
+                            <br>
+                            <h4></h4>
+                            <br>
+
+
+                            <form action="action_page.php">
+
+                                <fieldset>
+                                    <legend>Personal information:</legend>
+                                    Name:<br>
+                                    <input type="text" name="firstname" value="">
+                                    <br> Situation<br>
+                                    <input type="text" name="lastname" value="">
+                                    <br><br> Comment <br>
+                                    <input type="text" name="lastname" value="">
+                                    <br><br <input type="submit" value="Submit">
+                                    <br><br>
+                                    <p>
+                                        <a href="http://www.facebook.com">
+                                            <img border="0" alt="Facebook" src="facebook.jpg" alt="Facebook" width="160" height="125">
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="http://www.snapchat.com">
+                                            <img border="0" alt="Snapchat" src="snap.jpg" alt="Snapchat" width="160" height="125">
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="http://www.instagram.com">
+                                            <img border="0" alt="border=" 0 " alt="insta "" src="insta.jpg" alt="Brooklyn" width="160" height="145">
+                                        </a>
+                                    </p>
+
+
+                                    <input type="submit" value="Submit">
+                                </fieldset>
+                            </form>
+
+                            <h3><u>Other Recent Comment </u></h3>
+                            <h4>9/13/2016 via Facebook <br> Martin- I have been bullied by my classmates because of my Spanish accent</h4>
+                            <textarea name="message" rows="5" cols="10">9/13/2016  via Facebook 
+                            Joey -Hey,Dont worry about it I have a Brooklyn Accent and people make fun of me too .</textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+
+                            <h4>9/13/2016 via Snapchat<br> Giovanni- I have been having problems because of my height im 5'0ft and im in the 6th grade. </h4>
+                            <textarea name="message" rows="5" cols="10">9/13/2016  via Snapchat
+                            Max -Hey, G tbh I'm in the 8th grade and at your age i was like 4'11 so dont worry about it bro just do exercise and maintain yourself active thats all you have to do. and btw im 6'1 right now</textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+
+                            <h4>9/13/2016 via Instagram <br> Mary- So i'm really bad at English like my Essays are horrible and my friends are soo good at it and I feel left out!! </h4>
+                            <textarea name="message" rows="5" cols="10">9/13/2016  via Facebook 
+                            Ashley -Hey,Dont worry about it I have horrible writting skills but always try your best dont let yourself Down!!!!</textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+
+
+
+
+
+
+                        </ul>
+                    </p>
+                </div>
+
+
+                <!--end of student section -->
+
+                <!--begining of Students section-->
+                <div id="Topics" class="tab-pane fade">
+                    <p class="descrip">
+                        <h2 style="color:#125cb0" id="T-info"><u>High School section</u></h2>
+
+                        <ul class="descrip" id="All-info">
+                            <h3><u>Tips and Rules before posting a picture or a comment <span class="glyphicon glyphicon-thumbs-up"></span></u>
+                            </h3>
+                            <br>
+                            <h4>1. BE RESPECTFUL</h4>
+                            <h4>2. Have Fun</h4>
+
+                            <h4>3. NOONE IS PERFECT</h4>
+
+                            <h4>4. KEEP YOUR Private Information to Yourself </h4>
+
+                            <h4>5. Don't be rude </h4>
+
+                            <h4>6. Dont spam on someone else's page </h4>
+
+                            <h4>7. Write comments that will help others or that will be supportive </h4>
+
+
+                            <h4>8. If you see any suspecious picture or a very DISRESPCTFUL comment or story REPORT IT! </h4>
+
+                            <br>
+                            <form action="action_page.php">
+
+                                <fieldset>
+                                    <legend>Personal information:</legend>
+                                    Name:<br>
+                                    <input type="text" name="firstname" value="">
+                                    <br> Situation<br>
+                                    <input type="text" name="lastname" value="">
+                                    <br><br> Comment <br>
+                                    <input type="text" name="lastname" value="">
+                                    <br><br <input type="submit" value="Submit">
+                                    <br><br>
+                                    <p>
+                                        <a href="http://www.facebook.com">
+                                            <img border="0" alt="Facebook" src="facebook.jpg" alt="Facebook" width="160" height="125">
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="http://www.snapchat.com">
+                                            <img border="0" alt="Snapchat" src="snap.jpg" alt="Snapchat" width="160" height="125">
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="http://www.instagram.com">
+                                            <img border="0" alt="border=" 0 " alt="insta "" src="insta.jpg" alt="Brooklyn" width="160" height="125">
+                                        </a>
+                                    </p>
+
+
+                                    <input type="submit" value="Submit">
+                                </fieldset>
+                            </form>
+                            <br>
+                            <h3><u>Other Recent Comment </u></h3>
+                            <h4>8/11/2016 via Facebook <br> Martin- I have been bullied by my classmates because of my brooklynaccent</h4>
+                            <textarea name="message" rows="5" cols="10">9/13/2016  via Facebook 
+                            Joey -Hey,Dont worry about it I have a Brooklyn Accent too and people make fun of me too just rub it off there just annoying kids that act childish.</textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+
+                            <h4>8/13/2016 via Snapchat<br> Giovanni- I have been having problems because of my height im 5'0ft and im in the 6th grade. </h4>
+                            <textarea name="message" rows="5" cols="10">9/13/2016  via Snapchat
+                            Max -Hey, G tbh I'm in the 8th grade and at your age i was like 4'11 so dont worry about it bro just do exercise and maintain yourself active thats all you have to do. and btw im 6'1 right now</textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+
+                            <h4>9/13/2016 via Instagram <br> Mary- So i'm really bad at English like my Essays are horrible and my friends are soo good at it and I feel left out!! </h4>
+                            <textarea name="message" rows="5" cols="10">9/13/2016  via Facebook 
+                            Ashley -Hey,Dont worry about it I have horrible writting skills but always try your best dont let yourself Down!!!!</textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+
+
+
+                        </ul>
+                    </p>
+                </div>
+
+
 </body>
 
 </html>
